@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1,h2{font-size: 42px; color: #fff;margin-bottom: 30px;  font-family: "Roboto Condensed", sans-serif;
+}
+a{text-decoration: none;color: #090c31;}
+.pad100 {padding:  100px 0px;}
+.bgcolor{background-color: #090c31;}
+.navbar{position: sticky;top:0;}
+.bannerSlider img {height: 100vh;object-fit: cover;}
+p{margin-bottom: 2rem;letter-spacing: 0.2px;color: #fff;}
+.content-image{margin-bottom: 2rem;}
+img{border-radius: 5px;}
+
+.service-image{background: #d9d9d9;
+    height: 320px;border-radius: 5px; overflow: hidden;}
+.service-image img{object-fit: contain;}
+.serive-name{margin: 0;color: #fff; border-bottom: 1px solid #ffffff62; padding: 12px 0px;}
+.service-data .mt-5 .col-md-4{margin-bottom: 30px;}
+
+.es-pointor li{margin-bottom: 2rem;letter-spacing: 0.2px;color: #fff;}
+.red-link{width: 100%;border: 1px solid #090c31; border-radius: 10px;display: flex;align-items: center; justify-content: center;padding: 12px;transition: all 0.5s ease;background-color: #090c31; color: #fff;}
+.location{color: #090c31;}
+.red-link:hover {background-color: #fff;color: #090c31;}
+.location-link .col-md-4{margin-bottom:24px;}
+
+.red0-link{border: 1px solid #ffffff;}
+.service-data-0 .col-12{margin-bottom:10px;}
