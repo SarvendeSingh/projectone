@@ -8,29 +8,36 @@
 h1,h2{font-size: 42px; color: #fff;margin-bottom: 30px;  font-family: "Roboto Condensed", sans-serif;
 }
 a{text-decoration: none;color: #090c31;}
-.pad100 {padding:  100px 0px;}
+.pad100 {padding:  60px 0px;}
 .bgcolor{background-color: #090c31;}
-.navbar{position: sticky;top:0;z-index: 99999;}
+.navbar{position: sticky;top:0;z-index: 999;}
 .bannerSlider img {height: 100vh;object-fit: cover;}
 p{margin-bottom: 2rem;letter-spacing: 0.2px;color: #fff;}
 .content-image{margin-bottom: 2rem;}
 img{border-radius: 5px;}
 
-.navbar-brand img{width: 220px;object-fit: contain;}
+.navbar-brand img{width: 190px;object-fit: contain;}
 
-.service-image{background: #d9d9d9;
-    height: 320px;border-radius: 5px; overflow: hidden;}
-.service-image img{object-fit: contain;}
-.serive-name{margin: 0;color: #fff; border-bottom: 1px solid #ffffff62; padding: 12px 0px; letter-spacing: 0.4px;}
-.service-data .mt-5 .col-md-4{margin-bottom: 30px;}
+.service-image{background: #ffffff;
+    /* height: 320px; */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #fff;
+    padding: 6px;
+display: block;
+}
+.service-image img{object-fit: cover;height: 320px;}
+.serive-name{margin: 0;color: #000000; text-align: center; padding: 12px 0px; letter-spacing: 0.5px;font-weight: 600;}
+.service-data .mt-5 .col-md-3,.service-data .row .col-md-3{margin-bottom: 30px;}
 
 .es-pointor li{margin-bottom: 2rem;letter-spacing: 0.2px;color: #fff;}
+.es-pointor li a{letter-spacing: 0.2px;color: #fff;}
 .red-link{width: 100%;border: 1px solid #090c31; border-radius: 10px;display: flex;align-items: center; justify-content: center;padding: 12px;transition: all 0.5s ease;background-color: #090c31; color: #fff;}
 .location{color: #090c31;}
 .red-link:hover {background-color: #fff;color: #090c31;}
 .location-link .col-md-4{margin-bottom:24px;}
 
-.red0-link{border: 1px solid #ffffff;}
+/* .red0-link{border: 1px solid #ffffff;} */
 .service-data-0 .col-12{margin-bottom:10px;}
 .whatsapp{position: fixed;
     bottom: 40px;
@@ -54,26 +61,61 @@ img{border-radius: 5px;}
 
 .serive-name  span{
     font-size: 13px;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #000000;
     padding: 0px 12px;
     margin-left: 10px;
     line-height: 13px;
     display: inline-block;
 }
-
+img{
+    width: 100%;
+}
 .contactno{
     position: fixed;
     bottom: 40px;
     left: 45px;
+    width: 40px;
+    height: 40px;
     z-index: 9999;
     animation: imgUp 0.7s linear infinite alternate;
     animation-delay: 0.5s;
-    padding: 12px;
-    background-color: #ffffff;
-    color: #090c31;
-    font-weight: bold;
-    border-radius: 4px;
 }
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #ffffff;
+    background-color: #090c31;
+}
+.dropdown-item {
+    padding: 8px;
+    border: 1px solid #8080802e;
+    border-bottom: 0;
+}
+.dropdown-menu{
+    padding: 0;
+}
+
+.hotal-contact{
+    color: #ffffff;
+    background-color: transparent;
+    padding: 2px;
+    position: absolute;
+    bottom: 60px;
+    right: 12px;
+    box-shadow: 0px 0px 5px #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff;
+    animation: imgUp 0.7s linear infinite alternate;
+    animation-delay: 0.5s;
+}
+.hotal-contact img{
+    height: 100%;
+}
+
 
 
 @keyframes imgUp {
@@ -99,6 +141,7 @@ img{border-radius: 5px;}
 
 .hd-link{
     position: relative;
+    color: #090c31;
 }
 .hd-link::before{
     content: "";
@@ -113,4 +156,38 @@ img{border-radius: 5px;}
 
 .hd-link:hover::before{
     width: 75%;
+}
+
+.footer-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer-icon a{
+    width: 45px;
+    height: 45px;
+    margin: 0px 7px;
+    
+}
+.footer-icon a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.contant-footer{
+    padding: 60px 0;
+}
+
+.location-link{
+    background: url(../images/vector-silhouettes-1772870_1280.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.location-inner{
+    background-color: #ffffffe4;
+    padding: 40px;
 }
