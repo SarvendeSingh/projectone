@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    const _ = Symbol('placeholder'); // defining a placeholder
+
+function curry(func) {
+    // console.log(func.length);
+    
+    return function curried(...args) {
+       
+        // console.log(args);
+        
+        // If all arguments are filled, call the original function
+        if (args.length >= func.length && !args.includes(_)) {
+            return func.apply(this, args);
+        }
+        // Otherwise, return a new function that waits for more arguments
+        return function (...newArgs) {
+            // console.log(...newArgs);
+            
+            const combinedArgs = args.map(arg => arg === _ && newArgs.length ? newArgs.shift() : arg).concat(newArgs);
+            console.log(combinedArgs);
+            
+            return curried.apply(this, combinedArgs);
+        };
+    };
+}
+
+// Example: simple addition
+const add = (a, b, c) => a + b + c;
+const curriedAdd = curry(add);
+
+curriedAdd(_, 2, _)(1)(3)
+
+// console.log(); // Output: 6
+
+   </script>
+</body>
+</html>
